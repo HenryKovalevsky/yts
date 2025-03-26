@@ -12,14 +12,14 @@ My modest attempt to port [ytfzf](https://github.com/pystardust/ytfzf) to Window
 
 ## Prerequisites
 
-- [`PowerShell`](https://github.com/PowerShell/PowerShell)
+- [`PowerShell 7+`](https://github.com/PowerShell/PowerShell)
 - [`fzf`](https://github.com/junegunn/fzf) (menu selection screen)
 - [`curl`](https://curl.se/)
 - [`jq`](https://jqlang.github.io/jq/)
 - [`chafa`](https://hpjansson.org/chafa/) (thumbnails viewer)
 - [`mpv`](https://mpv.io/) (video and audio player)
 - [`yt-dlp`](https://github.com/yt-dlp/yt-dlp)
-- Terminal with the sixel graphics support (e.g. [`Windows Terminal Preview 1.22`](https://aka.ms/terminal-preview+))
+- Terminal with the sixel graphics support (e.g. [`Windows Terminal Preview 1.22+`](https://aka.ms/terminal-preview))
 
 > You can easily install all the dependencies with [`Scoop`](https://scoop.sh/).
 
