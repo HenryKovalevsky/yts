@@ -1,6 +1,6 @@
 {
   "version": "0.0.1",
-  "url": "https://raw.githubusercontent.com/HenryKovalevsky/yts/refs/heads/master/yts.ps1",
+  "url": "https://raw.githubusercontent.com/HenryKovalevsky/yts/refs/heads/fzf+pwsh/yts.ps1",
   "bin": "yts.ps1",
   "hash": "7de7949c4842397ffc7526c5bb678307b6410974d4c8df581b7ce9b57c7c50dc"
 }

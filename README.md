@@ -30,10 +30,8 @@ scoop install fzf curl jq chafa mpv yt-dlp
 ## Installation
 
 ```pwsh
-scoop install https://raw.githubusercontent.com/HenryKovalevsky/yts/refs/heads/master/scoop/yts.json
+scoop install https://raw.githubusercontent.com/HenryKovalevsky/yts/refs/heads/fzf+pwsh/scoop/yts.json
 ```
-
-Or copy [`yts.ps1`](https://github.com/HenryKovalevsky/yts/raw/master/yts.ps1) and add to PATH.
 
 ## Usage
 
