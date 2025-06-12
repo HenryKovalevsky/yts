@@ -1,10 +1,12 @@
 # YouTube-Search
 
-_PowerShell script that helps you find Youtube videos (without API) and open them using mpv/yt-dlp._
+_A simple terminal app that helps you find Youtube videos (without API) and open them using mpv/yt-dlp._
 
 My modest attempt to port [ytfzf](https://github.com/pystardust/ytfzf) to Windows. 
 
-> Really raw version.
+Made with [F#](https://fsharp.org) and [Thuja](https://github.com/HenryKovalevsky/Thuja). 
+
+_For the raw powershell version see [this branch](https://github.com/HenryKovalevsky/yts/tree/fzf+pwsh)._
 
 ## Showcase
 
@@ -13,9 +15,6 @@ My modest attempt to port [ytfzf](https://github.com/pystardust/ytfzf) to Window
 ## Prerequisites
 
 - [`PowerShell 7+`](https://github.com/PowerShell/PowerShell)
-- [`fzf`](https://github.com/junegunn/fzf) (menu selection screen)
-- [`curl`](https://curl.se/)
-- [`jq`](https://jqlang.github.io/jq/)
 - [`chafa`](https://hpjansson.org/chafa/) (thumbnails viewer)
 - [`mpv`](https://mpv.io/) (video and audio player)
 - [`yt-dlp`](https://github.com/yt-dlp/yt-dlp)
@@ -24,7 +23,7 @@ My modest attempt to port [ytfzf](https://github.com/pystardust/ytfzf) to Window
 > You can easily install all the dependencies with [`Scoop`](https://scoop.sh/).
 
 ```pwsh
-scoop install fzf curl jq chafa mpv yt-dlp
+scoop install chafa mpv yt-dlp
 ```
 
 ## Installation
@@ -33,18 +32,10 @@ scoop install fzf curl jq chafa mpv yt-dlp
 scoop install https://raw.githubusercontent.com/HenryKovalevsky/yts/refs/heads/master/scoop/yts.json
 ```
 
-Or copy [`yts.ps1`](https://github.com/HenryKovalevsky/yts/raw/master/yts.ps1) and add to PATH.
-
 ## Usage
 
-> Search video:
+Search video:
 
 ```pwsh
 yts <search>
-```
-
-> To run `mpv` with `--no-video` flag:
-
-```pwsh
-$ yts -a <search>
 ```
