@@ -59,6 +59,7 @@ let query =
 let model = Menu.init (search query) _.Title
 
 // hack: render tui in stderr to allow writing result to stdout
+Console.OutputEncoding <- Text.Encoding.UTF8
 Console.SetOut Console.Error
 
 Program.make model view update
