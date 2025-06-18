@@ -21,6 +21,9 @@ type YouTubeVideoInfo =
 
 module Scrapper =
   let private httpClient = new HttpClient()
+  httpClient.DefaultRequestHeaders.UserAgent.ParseAdd "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0"
+  httpClient.DefaultRequestHeaders.Accept.ParseAdd "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+  httpClient.DefaultRequestHeaders.AcceptLanguage.ParseAdd "en-US,en;q=0.5"
 
   let private parseYouTubeData json =
     let root = JToken.Parse json
